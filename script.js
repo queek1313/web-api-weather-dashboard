@@ -32,10 +32,10 @@ $(document).ready(function () {
             
             
             
-            // var iconURL = "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png";
+            var iconURL = "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png";
 
-            //  var imgDiv = $("<div>").attr("class", "col-md-4").append($("<img>").attr("src", iconURL).attr("class", "card-img"));
-            //  $("#imageTag").append(imgDiv);
+             var imgDiv = $("<div>").attr("class", "col-md-4").append($("<img>").attr("src", iconURL).attr("class", "card-img"));
+             $("#imageTag").append(imgDiv);
 
              
             var queryURLUv = "http://api.openweathermap.org/data/2.5/uvi?lat="+ latRes+"&lon=" + LonRes+ "&appid=e144f0dfab5a93d9b52ab5f20f611b1b"
