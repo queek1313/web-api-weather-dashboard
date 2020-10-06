@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href= "style.css"/> 
+    <title>The Weather Page</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <form id="citySearch">
-        <label for="cityInput"> Search for a city</label>
-        <input type="text" id="cityInput"><br>
-        <input id="findCity" type="submit" value="City Search">
-     </form>
-     <div id="imageTag">
 
-     </div>
-     <div id="temp"></div>
-     <div id="windSpeed"></div>
-     <div id="humidity"></div>
-     <div id="uvIndex"></div>
-    
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-3 bg-light">
+                <form id="citySearch">
+                    <label for="cityInput"> Search for a city</label>
+                    <input type="text" id="cityInput"><br>
+                    <input id="findCity" type="submit" value="City Search">
+                    <ul class="list-group search"></ul>
+                </form>
+            </aside>
+            <div class="col-md-9">
+
+                <h1>Current weather</h1>
+                <div id="imageTag"> </div>
+                <div id="currentDay"></div>
+                <div id="temp"></div>
+                <div id="windSpeed"></div>
+                <div id="humidity"></div>
+                <div id="uvIndex"></div>
+            </div>
+
+        </div>
+        <!-- <div class="row"> -->
+            <h1>5 day forecast</h1>
+            <div>
+                <div id="forecastImg">
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
