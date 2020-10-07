@@ -92,6 +92,18 @@ $(document).ready(function () {
               var imgDiv = $("<div>").attr("class", "col-md-4").append($("<img>").attr("src", iconURL).attr("class", "card-img"));
               $("#forecastImg").append(imgDiv);
 
+              var iconURL = "https://openweathermap.org/img/wn/" + response.list[3].weather[0].icon + ".png";
+
+              var imgDiv = $("<div>").attr("class", "col-md-4").append($("<img>").attr("src", iconURL).attr("class", "card-img"));
+              $("#forecastImg").append(imgDiv);
+
+              var iconURL = "https://openweathermap.org/img/wn/" + response.list[4].weather[0].icon + ".png";
+
+              var imgDiv = $("<div>").attr("class", "col-md-4").append($("<img>").attr("src", iconURL).attr("class", "card-img"));
+              $("#forecastImg").append(imgDiv);
+
+
+
           });
           $("#currentDay").text(moment().format("dddd MMMM Do, YYYY"))
 
@@ -169,6 +181,15 @@ $(document).ready(function () {
               var imgDiv = $("<div>").attr("class", "col-md-4").append($("<img>").attr("src", iconURL).attr("class", "card-img"));
               $("#forecastImg").append(imgDiv);
 
+              var iconURL = "https://openweathermap.org/img/wn/" + response.list[3].weather[0].icon + ".png";
+
+              var imgDiv = $("<div>").attr("class", "col-md-4").append($("<img>").attr("src", iconURL).attr("class", "card-img"));
+              $("#forecastImg").append(imgDiv);
+
+              var iconURL = "https://openweathermap.org/img/wn/" + response.list[4].weather[0].icon + ".png";
+
+              var imgDiv = $("<div>").attr("class", "col-md-4").append($("<img>").attr("src", iconURL).attr("class", "card-img"));
+              $("#forecastImg").append(imgDiv);
           }); 
 
 
